@@ -376,3 +376,43 @@ hoverElements.forEach((item)=>{
     });
 
 });
+
+/* ========================= */
+/* LOADING SCREEN */
+/* ========================= */
+
+window.addEventListener("load", ()=>{
+
+    const loader =
+    document.querySelector(".loader-wrapper");
+
+    setTimeout(()=>{
+
+        loader.classList.add("hide-loader");
+
+    },1200);
+
+});
+
+/* ========================= */
+/* SCROLL PROGRESS BAR */
+/* ========================= */
+
+window.addEventListener("scroll", ()=>{
+
+    const scrollTop =
+    document.documentElement.scrollTop;
+
+    const scrollHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+    const scrollPercent =
+    (scrollTop / scrollHeight) * 100;
+
+    document.querySelector(
+        ".scroll-progress-bar"
+    ).style.width =
+    scrollPercent + "%";
+
+});
