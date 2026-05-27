@@ -7,6 +7,7 @@ const typingText = document.querySelector(".typing-text");
 const words = [
     "AI Automation Developer",
     "n8n Workflow Expert",
+    "Zapier Workflow Expert",
     "AI Systems Builder",
     "Automation Specialist"
 ];
@@ -264,42 +265,7 @@ contactCards.forEach((card,index)=>{
 
 });
 
-// =========================
-// PROJECT SHOWCASE ANIMATION
-// =========================
 
-const projectShowcase =
-document.querySelector(".project-showcase");
-
-const projectObserver =
-new IntersectionObserver(entries=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.style.opacity = "1";
-
-            entry.target.style.transform =
-            "translateY(0px)";
-
-        }
-
-    });
-
-},{
-    threshold:0.2
-});
-
-projectShowcase.style.opacity = "0";
-
-projectShowcase.style.transform =
-"translateY(50px)";
-
-projectShowcase.style.transition =
-"all 0.9s ease";
-
-projectObserver.observe(projectShowcase);
 
 function scrollToSection(sectionId) {
 
@@ -414,5 +380,37 @@ window.addEventListener("scroll", ()=>{
         ".scroll-progress-bar"
     ).style.width =
     scrollPercent + "%";
+
+});
+
+// =========================
+// MODERN PROJECT ANIMATION
+// =========================
+
+const modernProjects =
+document.querySelectorAll(".scroll-project");
+
+const modernProjectObserver =
+new IntersectionObserver(entries=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add(
+                "active-project"
+            );
+
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+modernProjects.forEach(project=>{
+
+    modernProjectObserver.observe(project);
 
 });
