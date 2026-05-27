@@ -1431,77 +1431,35 @@ background 0.4s ease;
 }
 
 /* ========================= */
-/* PROJECTS SECTION */
+/* MODERN PROJECTS SECTION */
 /* ========================= */
 
 .projects-section{
 
     padding:140px 8%;
-
     position:relative;
-
     overflow:hidden;
 
 }
 
-
-
-/* Background Glow */
-
-.projects-section::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:600px;
-    height:600px;
-
-    background:
-    radial-gradient(
-        circle,
-        rgba(255,46,0,0.08),
-        transparent 70%
-    );
-
-    left:-250px;
-    top:100px;
-
-    pointer-events:none;
-
-}
-
-
-
-/* Container */
-
 .projects-container{
 
     max-width:1350px;
-
     margin:auto;
 
 }
 
-
-
-/* Header */
-
 .projects-header{
 
     text-align:center;
-
     max-width:850px;
-
-    margin:auto auto 90px;
+    margin:auto auto 100px;
 
 }
 
 .projects-header h2{
 
-    font-size:
-    clamp(36px,5vw,62px);
-
+    font-size:clamp(38px,5vw,62px);
     margin:25px 0;
 
 }
@@ -1509,196 +1467,86 @@ background 0.4s ease;
 .projects-header p{
 
     color:var(--secondary-text);
-
     line-height:1.9;
 
 }
 
+/* CARD */
 
-
-/* Project Showcase */
-
-.project-showcase{
+.modern-project-card{
 
     display:grid;
-
-    grid-template-columns:
-    1.1fr 1fr;
-
+    grid-template-columns:1fr 1fr;
     gap:60px;
 
     align-items:center;
 
-    background:
-    rgba(17,17,17,0.88);
+    margin-bottom:120px;
 
-    border:
-    1px solid rgba(255,255,255,0.05);
+    background:rgba(17,17,17,0.92);
 
-    border-radius:35px;
+    border:1px solid rgba(255,255,255,0.06);
 
-    padding:45px;
+    border-radius:32px;
 
-    position:relative;
-
-    overflow:hidden;
-
-    transition:0.5s;
-
-    box-shadow:
-    0 20px 50px rgba(0,0,0,0.35);
-
-}
-
-
-
-/* Hover */
-
-.project-showcase:hover{
-
-    transform:
-    translateY(-10px);
-
-    border-color:
-    rgba(255,46,0,0.2);
-
-    box-shadow:
-    0 25px 60px rgba(0,0,0,0.45),
-    0 0 35px rgba(255,46,0,0.08);
-
-}
-
-
-
-/* Gradient Overlay */
-
-.project-showcase::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    linear-gradient(
-        135deg,
-        rgba(255,46,0,0.08),
-        transparent
-    );
-
-    opacity:0;
-
-    transition:0.4s;
-
-}
-
-.project-showcase:hover::before{
-
-    opacity:1;
-
-}
-
-
-
-/* Image */
-
-.project-image-wrapper{
+    padding:40px;
 
     position:relative;
 
     overflow:hidden;
 
-    border-radius:24px;
-
-    border:
-    1px solid rgba(255,255,255,0.06);
-
-    cursor:pointer;
-
-    transition:0.5s;
-
-    transform-style:preserve-3d;
+    transition:0.5s ease;
 
 }
 
+.modern-project-card:hover{
 
+    transform:translateY(-10px);
 
-.project-image{
+    border-color:rgba(255,46,0,0.25);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.45),
+    0 0 30px rgba(255,46,0,0.08);
+
+}
+
+/* IMAGE */
+
+.project-sticky-image{
+
+    position:relative;
+
+}
+
+.project-main-img{
 
     width:100%;
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,0.06);
+
+    transition:0.6s ease;
 
     display:block;
 
-    border-radius:24px;
+}
 
-    transition:0.6s;
+.second-img{
 
-    /* Image Hover Depth Effect */
-
-.project-image-wrapper:hover{
-
-    transform:
-    translateY(-8px)
-    scale(1.02);
-
-    box-shadow:
-    0 30px 60px rgba(0,0,0,0.5),
-    0 0 35px rgba(255,46,0,0.12);
+    margin-top:25px;
 
 }
 
+.project-main-img:hover{
 
-
-/* Dark Overlay */
-
-.project-image-wrapper::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    linear-gradient(
-        to top,
-        rgba(0,0,0,0.25),
-        transparent
-    );
-
-    opacity:0;
-
-    transition:0.4s;
+    transform:scale(1.03);
 
 }
 
+/* CONTENT */
 
-
-.project-image-wrapper:hover::after{
-
-    opacity:1;
-
-}
-
-}
-
-
-
-/* Image Hover */
-
-.project-image-wrapper:hover .project-image{
-
-    transform:
-    scale(1.12);
-
-}
-
-
-
-/* Content */
-
-.project-label{
+.project-number{
 
     display:inline-block;
 
@@ -1706,38 +1554,29 @@ background 0.4s ease;
 
     border-radius:999px;
 
-    background:
-    rgba(255,46,0,0.1);
+    background:rgba(255,46,0,0.1);
 
-    border:
-    1px solid rgba(255,46,0,0.15);
+    border:1px solid rgba(255,46,0,0.2);
 
-    color:#ff2e00;
+    color:var(--accent);
 
     font-size:13px;
 
-    letter-spacing:1px;
-
     margin-bottom:25px;
 
 }
 
+.modern-project-content h3{
 
-
-.project-content-wrapper h3{
-
-    font-size:
-    clamp(30px,4vw,48px);
+    font-size:clamp(30px,4vw,48px);
 
     line-height:1.2;
 
-    margin-bottom:25px;
+    margin-bottom:24px;
 
 }
 
-
-
-.project-description{
+.modern-project-content p{
 
     color:var(--secondary-text);
 
@@ -1747,73 +1586,85 @@ background 0.4s ease;
 
 }
 
-
-
-/* Features */
-
-.project-features{
-
-    display:grid;
-
-    gap:14px;
-
-    margin-bottom:35px;
-
-}
-
-
-
-.feature-item{
-
-    color:#d7d7d7;
-
-    line-height:1.7;
-
-}
-
-
-
-/* Tools */
+/* TOOLS */
 
 .project-tools{
 
     display:flex;
-
     flex-wrap:wrap;
-
     gap:12px;
 
 }
 
-
-
 .project-tools span{
 
-    padding:10px 16px;
+    padding:10px 18px;
 
     border-radius:999px;
 
-    background:
-    rgba(255,46,0,0.08);
+    background:rgba(255,46,0,0.08);
 
-    border:
-    1px solid rgba(255,46,0,0.12);
+    border:1px solid rgba(255,46,0,0.15);
 
-    color:#ff2e00;
+    color:var(--accent);
 
     font-size:14px;
 
 }
 
+/* REVERSE */
 
+.reverse-project .project-sticky-image{
 
-/* Responsive */
+    order:2;
 
-@media(max-width:1000px){
+}
 
-    .project-showcase{
+.reverse-project .modern-project-content{
+
+    order:1;
+
+}
+
+/* SCROLL ANIMATION */
+
+.scroll-project{
+
+    opacity:0;
+    transform:translateY(80px);
+
+    transition:
+    opacity 1s ease,
+    transform 1s ease;
+
+}
+
+.scroll-project.active-project{
+
+    opacity:1;
+    transform:translateY(0px);
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .modern-project-card{
 
         grid-template-columns:1fr;
+
+    }
+
+    .reverse-project .project-sticky-image{
+
+        order:1;
+
+    }
+
+    .reverse-project .modern-project-content{
+
+        order:2;
 
     }
 
@@ -1827,57 +1678,13 @@ background 0.4s ease;
 
     }
 
-    .project-showcase{
+    .modern-project-card{
 
-        padding:30px;
+        padding:28px;
 
-    }
-
-}
-
-@media(max-width:500px){
-
-    .project-content-wrapper h3{
-
-        font-size:34px;
+        gap:35px;
 
     }
-
-}
-
-/* Floating Motion */
-
-@keyframes floatingImage{
-
-    0%{
-
-        transform:
-        translateY(0px);
-
-    }
-
-    50%{
-
-        transform:
-        translateY(-6px);
-
-    }
-
-    100%{
-
-        transform:
-        translateY(0px);
-
-    }
-
-}
-
-
-
-.project-image-wrapper{
-
-    animation:
-    floatingImage 5s ease-in-out infinite;
 
 }
 
