@@ -1,1016 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Website Title -->
     <title>MD Sajid Mahadi Bhuiyan | AI Automation Developer</title>
-
-    <!-- CSS File -->
+    <meta name="description" content="MD Sajid Mahadi Bhuiyan — AI Automation Developer building smart n8n & Zapier workflows that scale businesses.">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- ========================= -->
-<!-- SCROLL PROGRESS BAR -->
-<!-- ========================= -->
-
+<!-- SCROLL PROGRESS -->
 <div class="scroll-progress-bar"></div>
 
-    <!-- ========================= -->
-<!-- LOADING SCREEN -->
-<!-- ========================= -->
-
-<!-- <div class="loader-wrapper">
-
+<!-- LOADER -->
+<div class="loader-wrapper" id="loader">
     <div class="loader-content">
-
         <h1 class="loader-logo">
-
-            MD SAJID MAHADI BHUIYAN<span>.</span>
-
+            <span class="loader-word">MD</span>
+            <span class="loader-word">SAJID</span>
+            <span class="loader-word">MAHADI</span>
+            <span class="loader-word">BHUIYAN</span><span class="loader-dot">.</span>
         </h1>
-
-        <div class="loader-line"></div>
-
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        <div class="loader-meta">
+            <span>AI AUTOMATION DEVELOPER</span>
+            <span class="loader-percent">0%</span>
+        </div>
     </div>
+</div>
 
-</div> -->
-
-
-    <!-- ========================= -->
 <!-- CUSTOM CURSOR -->
-<!-- ========================= -->
-
 <div class="custom-cursor"></div>
-
 <div class="cursor-dot"></div>
 
-    <!-- ========================= -->
-    <!-- NAVBAR -->
-    <!-- ========================= -->
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="#home" class="nav-logo"><span>...</span></a>
+    <div class="nav-links">
+        <a href="#home" class="active" data-cursor="hover">Home</a>
+        <a href="#about" data-cursor="hover">About</a>
+        <a href="#services" data-cursor="hover">Services</a>
+        <a href="#projects" data-cursor="hover">Projects</a>
+        <a href="#contact" data-cursor="hover">Contact</a>
+        <a href="assets/files/sajid-cv.pdf" class="cv-btn" target="_blank" data-cursor="hover">Download CV</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+</nav>
 
-    <nav class="navbar">
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-grid-bg"></div>
 
-    
-
-        <div class="nav-links">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="assets/files/sajid-cv.pdf"
-               class="cv-btn"
-               target="_blank">
-
-               Download CV
-
-            </a>
-        </div>
-
-    </nav>
-
-
-
-    <!-- ========================= -->
-    <!-- HERO SECTION -->
-    <!-- ========================= -->
-
-    <section class="hero" id="home">
-
-        <!-- Background Glow -->
-        <div class="hero-glow glow-1"></div>
-        <div class="hero-glow glow-2"></div>
-
-        <div class="hero-container">
-
-            <!-- LEFT CONTENT -->
-            <div class="hero-content">
-
-                <div class="hero-badge">
-                    AI Automation Specialist
-                </div>
-
-                <h1>
-                    Building Smart <span>AI Automations</span> That Scale Businesses
-                </h1>
-
-                <h2 class="typing-text">
-                    AI Automation Developer
-                </h2>
-
-                <p>
-                    I build powerful AI-powered automations with n8n and Zapier that help businesses save time, reduce manual tasks and scale efficiently.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <button 
-class="primary-btn"
-onclick="scrollToSection('contact')"
->
-    Hire Me
-</button>
-
-                    <button
-class="secondary-btn"
-onclick="scrollToSection('projects')"
->
-    View Projects
-</button>
-
-                </div>
-
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-badge"><span class="pulse-dot"></span> AI Automation Specialist</div>
+            <h1 class="hero-title">
+                <span class="reveal-line"><span>Building Smart</span></span>
+                <span class="reveal-line"><span><em>AI Automations</em></span></span>
+                <span class="reveal-line"><span>That Scale Businesses</span></span>
+            </h1>
+            <h2 class="typing-text">AI Automation Developer</h2>
+            <p class="hero-desc">I build powerful AI-powered automations with n8n and Zapier that help businesses save time, reduce manual tasks and scale efficiently.</p>
+            <div class="hero-buttons">
+                <button class="primary-btn magnetic" onclick="scrollToSection('contact')" data-cursor="hover">
+                    <span>Hire Me</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </button>
+                <button class="secondary-btn magnetic" onclick="scrollToSection('projects')" data-cursor="hover">
+                    <span>View Projects</span>
+                </button>
             </div>
-
-
-
-            <!-- RIGHT IMAGE -->
-            <div class="hero-image">
-
-                <div class="image-wrapper">
-
-                    <img src="Professional Photos/1.jpg" alt="Sajid Mahadi">
-
-                </div>
-
+        </div>
+        <div class="hero-image">
+            <div class="image-wrapper" data-tilt>
+                <div class="image-ring"></div>
+                <img src="assets/images/Photo.jpg" alt="Sajid Mahadi Bhuiyan" onerror="this.style.display='none'">
+                <!-- <div class="image-badge">⚡ Available</div> -->
             </div>
-
         </div>
+    </div>
 
+    <div class="scroll-indicator"><span></span><p>SCROLL</p></div>
+</section>
 
+<!-- MARQUEE -->
+<div class="marquee">
+    <div class="marquee-track">
+        <span>n8n</span><span>•</span><span>Zapier</span><span>•</span><span>OpenAI</span><span>•</span><span>Make.com</span><span>•</span><span>HubSpot</span><span>•</span><span>Slack</span><span>•</span><span>Airtable</span><span>•</span><span>Google Workspace</span><span>•</span><span>Webhooks</span><span>•</span><span>Twilio</span><span>•</span>
+        <span>n8n</span><span>•</span><span>Zapier</span><span>•</span><span>OpenAI</span><span>•</span><span>Make.com</span><span>•</span><span>HubSpot</span><span>•</span><span>Slack</span><span>•</span><span>Airtable</span><span>•</span><span>Google Workspace</span><span>•</span><span>Webhooks</span><span>•</span><span>Twilio</span><span>•</span>
+    </div>
+</div>
 
-        <!-- Scroll Down -->
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-
-    </section>
-
-    <!-- ========================= -->
-<!-- ABOUT SECTION -->
-<!-- ========================= -->
-
+<!-- ABOUT -->
 <section class="about-section" id="about">
-
-    <!-- Background Glow -->
     <div class="about-glow"></div>
-
     <div class="about-container">
-
-        <!-- LEFT CONTENT -->
-        <div class="about-left">
-
-            <div class="section-tag">
-                ABOUT ME
-            </div>
-
-            <h2>
-                Creating Smart Automation Systems For Modern Businesses
-            </h2>
-
-            <p class="about-description">
-                I specialize in building intelligent automation systems using n8n, Zapier, AI tools and API integrations that help businesses eliminate repetitive work, improve efficiency and scale operations faster.
-            </p>
-
-            <p class="about-description">
-                From CRM automation to AI-powered workflows, I design solutions that save time, reduce human error and streamline business processes.
-            </p>
-
-
-
-            <!-- Stats -->
-
+        <div class="about-left reveal">
+            <div class="section-tag">ABOUT ME</div>
+            <h2>Creating Smart Automation Systems For Modern Businesses</h2>
+            <p class="about-description">I specialize in building intelligent automation systems using n8n, Zapier, AI tools and API integrations that help businesses eliminate repetitive work, improve efficiency and scale operations faster.</p>
+            <p class="about-description">From CRM automation to AI-powered workflows, I design solutions that save time, reduce human error and streamline business processes.</p>
             <div class="stats-grid">
-
-                <div class="stat-card">
-                    <h3>15+</h3>
-                    <span>Automation Workflows</span>
-                </div>
-
-                <div class="stat-card">
-                    <h3>10+</h3>
-                    <span>Business Solutions</span>
-                </div>
-
-                <div class="stat-card">
-                    <h3>24/7</h3>
-                    <span>Automation Efficiency</span>
-                </div>
-
+                <div class="stat-card reveal"><h3 data-count="15">0</h3><span>Automation Workflows</span></div>
+                <div class="stat-card reveal"><h3 data-count="10">0</h3><span>Business Solutions</span></div>
+                <div class="stat-card reveal"><h3>24/7</h3><span>Automation Efficiency</span></div>
             </div>
-
         </div>
-
-
-
-        <!-- RIGHT SIDE -->
-
         <div class="about-right">
-
-            <div class="skill-card">
-                <div class="skill-icon">⚡</div>
-
-                <div>
-                    <h3>n8n and Zapier Workflow Automation</h3>
-                    <p>Advanced workflow systems with intelligent automation logic.</p>
-                </div>
-            </div>
-
-
-
-            <div class="skill-card">
-                <div class="skill-icon">🤖</div>
-
-                <div>
-                    <h3>AI Integration Systems</h3>
-                    <p>Custom AI automations powered by ChatGPT and APIs.</p>
-                </div>
-            </div>
-
-
-
-            <div class="skill-card">
-                <div class="skill-icon">🔗</div>
-
-                <div>
-                    <h3>API & Data Sync</h3>
-                    <p>Connect apps, tools, CRMs, and databases seamlessly.</p>
-                </div>
-            </div>
-
-
-
-            <div class="skill-card">
-                <div class="skill-icon">📈</div>
-
-                <div>
-                    <h3>Business Process Automation</h3>
-                    <p>Automate repetitive tasks and improve productivity.</p>
-                </div>
-            </div>
-
+            <div class="skill-card reveal" data-cursor="hover"><div class="skill-icon">⚡</div><div><h3>n8n and Zapier Workflow Automation</h3><p>Advanced workflow systems with intelligent automation logic.</p></div></div>
+            <div class="skill-card reveal" data-cursor="hover"><div class="skill-icon">🤖</div><div><h3>AI Integration Systems</h3><p>Custom AI automations powered by ChatGPT and APIs.</p></div></div>
+            <div class="skill-card reveal" data-cursor="hover"><div class="skill-icon">🔗</div><div><h3>API & Data Sync</h3><p>Connect apps, tools, CRMs, and databases seamlessly.</p></div></div>
+            <div class="skill-card reveal" data-cursor="hover"><div class="skill-icon">📈</div><div><h3>Business Process Automation</h3><p>Automate repetitive tasks and improve productivity.</p></div></div>
         </div>
-
     </div>
+</section>
 
-    <!-- ========================= -->
-<!-- SERVICES SECTION -->
-<!-- ========================= -->
-
+<!-- SERVICES -->
 <section class="services-section" id="services">
-
     <div class="services-container">
-
-        <!-- SECTION HEADER -->
-
-        <div class="services-header">
-
-            <div class="section-tag">
-                SERVICES
-            </div>
-
-            <h1>
-                Automation Services I Provide
-            </h1>
-
-            <p>
-                I build intelligent automation systems that streamline operations,
-                reduce manual work and improve business productivity.
-            </p>
-
+        <div class="services-header reveal">
+            <div class="section-tag">SERVICES</div>
+            <h2>Automation Services I Provide</h2>
+            <p>I build intelligent automation systems that streamline operations, reduce manual work and improve business productivity.</p>
         </div>
-
-
-
-        <!-- SERVICES GRID -->
-
         <div class="services-grid">
-
-            <!-- CARD 1 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    ⚡
-                </div>
-
-                <h3>AI Workflow Automation</h3>
-
-                <p>
-                    Smart workflow systems using n8n and AI tools to automate repetitive tasks.
-                </p>
-
-            </div>
-
-
-
-            <!-- CARD 2 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    📧
-                </div>
-
-                <h3>Email & WhatsApp Automation</h3>
-
-                <p>
-                    Automated messaging systems for customer communication and follow-ups.
-                </p>
-
-            </div>
-
-
-
-            <!-- CARD 3 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    🤖
-                </div>
-
-                <h3>ChatGPT AI Automations</h3>
-
-                <p>
-                    AI-powered automation systems integrated with GPT workflows and APIs.
-                </p>
-
-            </div>
-
-
-
-            <!-- CARD 4 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    📊
-                </div>
-
-                <h3>CRM Automation</h3>
-
-                <p>
-                    Automate lead tracking, client management, and CRM workflows efficiently.
-                </p>
-
-            </div>
-
-
-
-            <!-- CARD 5 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    🔗
-                </div>
-
-                <h3>API Integration</h3>
-
-                <p>
-                    Connect multiple apps and systems with seamless API automation workflows.
-                </p>
-
-            </div>
-
-
-
-            <!-- CARD 6 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    🛒
-                </div>
-
-                <h3>E-commerce Automation</h3>
-
-                <p>
-                    Automate order processing, notifications, inventory sync, and customer flows.
-                </p>
-
-            </div>
-
-
-
-            <!-- CARD 7 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    📅
-                </div>
-
-                <h3>Appointment Automation</h3>
-
-                <p>
-                    Smart booking systems with calendar sync and automated reminders.
-                </p>
-
-            </div>
-
-
-
-            <!-- CARD 8 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    📁
-                </div>
-
-                <h3>Google Sheets Automation</h3>
-
-                <p>
-                    Automatically manage, update, and organize business data using workflows.
-                </p>
-
-            </div>
-
-
-            <!-- CARD 9 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    🧠
-                </div>
-
-                <h3>Custome Automation</h3>
-
-                <p>
-                    Make automation with your custome ideas to make your work easy and smarter.
-                </p>
-
-            </div>
-
+            <div class="service-card reveal" data-cursor="hover"><div class="service-icon">⚡</div><h3>AI Workflow Automation</h3><p>Smart workflow systems using n8n and AI tools to automate repetitive tasks.</p></div>
+            <div class="service-card reveal" data-cursor="hover"><div class="service-icon">📧</div><h3>Email & WhatsApp Automation</h3><p>Automated messaging systems for customer communication and follow-ups.</p></div>
+            <div class="service-card reveal" data-cursor="hover"><div class="service-icon">🤖</div><h3>ChatGPT AI Automations</h3><p>AI-powered automation systems integrated with GPT workflows and APIs.</p></div>
+            <div class="service-card reveal" data-cursor="hover"><div class="service-icon">📊</div><h3>CRM Automation</h3><p>Automate lead tracking, client management, and CRM workflows efficiently.</p></div>
+            <div class="service-card reveal" data-cursor="hover"><div class="service-icon">🔗</div><h3>API Integration</h3><p>Connect multiple apps and systems with seamless API automation workflows.</p></div>
+            <div class="service-card reveal" data-cursor="hover"><div class="service-icon">🛒</div><h3>E-commerce Automation</h3><p>Automate order processing, notifications, inventory sync, and customer flows.</p></div>
+            <div class="service-card reveal" data-cursor="hover"><div class="service-icon">📅</div><h3>Appointment Automation</h3><p>Smart booking systems with calendar sync and automated reminders.</p></div>
+            <div class="service-card reveal" data-cursor="hover"><div class="service-icon">📁</div><h3>Google Sheets Automation</h3><p>Automatically manage, update, and organize business data using workflows.</p></div>
+            <div class="service-card reveal" data-cursor="hover"><div class="service-icon">🧠</div><h3>Custome Automation</h3><p>Make automation with your custome ideas to make your work easy and smarter.</p></div>
         </div>
-
     </div>
-
 </section>
 
-<!-- ========================= -->
-<!-- NEW PROJECTS SECTION -->
-<!-- ========================= -->
-
+<!-- PROJECTS -->
 <section class="projects-section" id="projects">
-
     <div class="projects-container">
-
-        <!-- HEADER -->
-
-        <div class="projects-header">
-
-            <div class="section-tag">
-                <h1>FEATURED PROJECTS</h1>
-            </div>
-
-            <h2>
-                Featured Automation Projects
-            </h2>
-
-            <p>
-                Real-world AI automation systems built to streamline business operations, improve efficiency and scale workflows intelligently.
-
+        <div class="projects-header reveal">
+            <div class="section-tag">FEATURED PROJECTS</div>
+            <h2>Featured Automation Projects</h2>
+            <p>Real-world AI automation systems built to streamline business operations, improve efficiency and scale workflows intelligently.</p>
         </div>
 
-        <!-- PROJECT 1 (Image Left) -->
-
-        <div class="modern-project-card scroll-project">
-
-            <div class="project-sticky-image">
-
-                <img src="projects/01/1.1.jpg" class="project-main-img">
-
-                <img src="projects/01/1.2.jpg" class="project-main-img second-img">
-
-            </div>
-
-            <div class="modern-project-content">
-
-                <div class="project-number">
-                    Featured Project 1
+        <div class="projects-list">
+            <!-- 1 -->
+            <article class="project-card reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 1.jpg" alt="AI SupportFlow Automation"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 01</div>
+                    <h3>AI SupportFlow Automation</h3>
+                    <p>Built an AI-powered customer support automation system for a B2B SaaS company that delivers instant 24/7 customer assistance across website chat and email channels. The system intelligently handles FAQs, classifies customer intents, detects user sentiment, escalates complex issues to human agents and generates automated support summaries — significantly reducing response time and support workload while improving customer satisfaction.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>OpenAI API</span><span>HubSpot</span><span>Twilio</span><span>Webhook</span><span>Google Sheets</span></div>
                 </div>
-
-                <h3>
-                    AI SupportFlow Automation
-                </h3>
-
-                <p>
-                    Built an AI-powered customer support automation system for a B2B SaaS company that delivers instant 24/7 customer assistance across website chat and email channels. The system intelligently handles FAQs, classifies customer intents, detects user sentiment, escalates complex issues to human agents and generates automated support summaries — significantly reducing response time and support workload while improving customer satisfaction.
-                </p>
-
-                <div class="project-tools">
-
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>OpenAI API</span>
-                    <span>HubSpot</span>
-                    <span>Twilio</span>
-                    <span>Webhook</span>
-                    <span>Google Sheets</span>
-
+            </article>
+            <!-- 2 -->
+            <article class="project-card reverse reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 2.jpg" alt="AI Lead Capture and CRM Automation"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 02</div>
+                    <h3>AI Lead Capture and CRM Automation</h3>
+                    <p>AI-powered support ticket automation system with sentiment analysis, smart routing and automated customer communication workflows.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>Slack</span><span>OpenAI</span><span>Shopify</span><span>Gmail</span></div>
                 </div>
-
-            </div>
-
+            </article>
+            <!-- 3 -->
+            <article class="project-card reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 3.jpg" alt="Multi-Channel Order & Inventory Automation"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 03</div>
+                    <h3>Multi-Channel Order & Inventory Automation System</h3>
+                    <p>A complete automation solution for a growing fashion brand that synchronizes inventory and processes orders across Shopify, Facebook Shop, Instagram Shop and online marketplaces in real-time. The system eliminates manual spreadsheet work, prevents overselling, provides AI-powered demand forecasting and sends automated customer notifications — reducing operational workload by 80% while maintaining 95% inventory accuracy.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>OpenAI API</span><span>Shopify</span><span>Google Sheets</span><span>Slack</span></div>
+                </div>
+            </article>
+            <!-- 4 -->
+            <article class="project-card reverse reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 4.jpg" alt="AI Content Creation Pipeline"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 04</div>
+                    <h3>AI Content Creation Pipeline</h3>
+                    <p>An intelligent, multi-brand content production system that automates the entire content lifecycle — from research and ideation to drafting, repurposing and scheduling across blogs, social media and newsletters. The pipeline supports 6+ niche brands with unique voice customization, generates platform-specific content (LinkedIn, X, Instagram, Email) and maintains a human approval workflow — reducing content production time by 70% while ensuring consistent daily publishing.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>Google Docs</span><span>OpenAI</span><span>LinkedIn API</span><span>WordPress</span></div>
+                </div>
+            </article>
+            <!-- 5 -->
+            <article class="project-card reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 5.jpg" alt="Multi-Platform Social Media Auto Posting"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 05</div>
+                    <h3>Multi-Platform Social Media Auto Posting System</h3>
+                    <p>A fully automated social media publishing system for a personal branding agency that manages content for 10+ founders, coaches and business influencers. The system centralizes content from Google Sheets/Airtable, auto-formats posts for each platform (LinkedIn, X, Facebook, Instagram, Threads), handles approval workflows and publishes automatically — reducing manual posting effort by 90% while ensuring consistent scheduling and near-zero missed posts.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>OpenAI API</span><span>Google Sheets</span><span>Meta API</span><span>Google Drive</span><span>Slack Sheets</span></div>
+                </div>
+            </article>
+            <!-- 6 -->
+            <article class="project-card reverse reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 6.jpg" alt="AI Email Marketing Funnel"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 06</div>
+                    <h3>AI-Powered Email Marketing Automation Funnel</h3>
+                    <p>A comprehensive automated email marketing system for a DTC skincare and wellness brand that captures leads from multiple sources (Facebook Ads, website forms, quizzes, abandoned carts), segments audiences by behavior and delivers personalized AI-generated email sequences — including welcome series, abandoned cart recovery, upsell campaigns and win-back sequences. The funnel increased email-driven revenue by 20%+, recovered 15%+ abandoned carts and reduced manual marketing effort by 70%.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>Shopify</span><span>OpenAI</span><span>Google Sheets</span><span>Webhooks</span></div>
+                </div>
+            </article>
+            <!-- 7 -->
+            <article class="project-card reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 7.jpg" alt="AI Invoice Automation"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 07</div>
+                    <h3>AI-Powered Invoice & Accounting Automation</h3>
+                    <p>An end-to-end automated bookkeeping solution for a multi-client accounting agency serving 40+ SMBs across retail, logistics, healthcare and professional services. The system uses AI and OCR to extract data from invoices (email, cloud storage, uploads), categorizes expenses, detects duplicates and anomalies, syncs with QuickBooks/Xero and generates monthly reconciliation reports — reducing manual bookkeeping work by 70%+ while maintaining 90%+ extraction accuracy and audit-ready records.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>OpenAI API</span><span>Google Vision API</span><span>Gmail</span><span>Google Drive</span><span>Google Sheets</span></div>
+                </div>
+            </article>
+            <!-- 8 -->
+            <article class="project-card reverse reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 8.jpg" alt="AI Lead Capture for Real Estate"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 08</div>
+                    <h3>AI Lead Capture + CRM Automation for Real Estate</h3>
+                    <p>An intelligent lead management system for a real estate agency processing 80–150+ daily inquiries from Facebook Ads, websites, WhatsApp and listing portals. The system automatically captures, qualifies and scores leads using AI, routes them to the right sales agents and triggers instant personalized follow-up via email and WhatsApp — ensuring 90% of leads enter CRM automatically with first response sent within 2 minutes, boosting lead-to-sale conversion significantly.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>Meta/Facebook Lead Ads</span><span>OpenAI API</span><span>Gmail</span></div>
+                </div>
+            </article>
+            <!-- 9 -->
+            <article class="project-card reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 9.jpg" alt="AI Alert Bot"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 09</div>
+                    <h3>AI Telegram / WhatsApp Alert Bot</h3>
+                    <p>A real-time business operations monitoring system for multiple online businesses (eCommerce, SaaS, paid ads) that consolidates critical alerts from sales, payments, inventory, website uptime, AD performance and support tickets into Telegram and WhatsApp. The bot uses AI to classify alert severity (Critical/High/Medium/Low), generates smart summaries, routes notifications to the right team (Finance, Sales, Support, Operations) and provides command-based queries like /today sales and /failed orders — ensuring critical incidents are reported within 1 minute and reducing manual monitoring effort significantly.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>OpenAI API</span><span>Telegram Bot API</span><span>Slack</span><span>Shopify</span><span>Google Sheets</span></div>
+                </div>
+            </article>
+            <!-- 10 -->
+            <article class="project-card reverse reveal" data-cursor="hover">
+                <div class="project-media"><img src="Projects/Project 10.jpg" alt="AI Meeting Assistant"><div class="project-shine"></div></div>
+                <div class="project-body">
+                    <div class="project-number">FEATURED PROJECT 10</div>
+                    <h3>AI Meeting & Productivity Assistant</h3>
+                    <p>An intelligent automation system for a remote consulting company with 35+ employees that automatically processes Zoom, Google Meet and Teams meetings to generate AI-powered summaries, extract key decisions, risks and blockers and convert them into actionable tasks assigned to specific owners with deadlines and priorities. The system sends follow-up summaries via Slack/Email, tracks overdue tasks and maintains a searchable knowledge base — reducing manual note-taking by 70%+ while improving accountability and post-meeting execution speed.</p>
+                    <div class="project-tools"><span>n8n</span><span>zapier</span><span>Google Meet</span><span>Slack</span><span>Email</span><span>Whisper API</span></div>
+                </div>
+            </article>
         </div>
-
-        <!-- PROJECT 2 (Image Right) -->
-
-        <div class="modern-project-card reverse-project scroll-project">
-
-            <div class="project-sticky-image">
-
-                <img src="projects/02/1.1.jpg" class="project-main-img">
-
-                <img src="projects/02/1.2.jpg" class="project-main-img second-img">
-
-            </div>
-
-            <div class="modern-project-content">
-
-                <div class="project-number">
-                    Featured Project 2
-                </div>
-
-                <h3>
-                    AI Lead Capture and CRM Automation
-                </h3>
-
-                <p>
-                    AI-powered support ticket automation system with sentiment analysis,
-                    smart routing and automated customer communication workflows.
-                </p>
-
-                <div class="project-tools">
-
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>Slack</span>
-                    <span>OpenAI</span>
-                    <span>Shopify</span>
-                    <span>Gmail</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-       
-            <!-- PROJECT 3 (Image left) -->
-        <div class="modern-project-card scroll-project">
-            <div class="project-sticky-image">
-                <img src="projects/03/1.1.jpg" class="project-main-img">
-                <img src="projects/03/1.2.jpg" class="project-main-img second-img">
-            </div>
-            <div class="modern-project-content">
-                <div class="project-number">
-                    Featured Project 3
-                </div>
-                <h3>
-                    Multi-Channel Order & Inventory Automation System
-                </h3>
-                <p>
-                    A complete automation solution for a growing fashion brand that synchronizes inventory and processes orders across Shopify, Facebook Shop, Instagram Shop and online marketplaces in real-time. The system eliminates manual spreadsheet work, prevents overselling, provides AI-powered demand forecasting and sends automated customer notifications — reducing operational workload by 80% while maintaining 95% inventory accuracy.
-                </p>
-                <div class="project-tools">
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>OpenAI API</span>
-                    <span>Shopify</span>
-                    <span>Google Sheets</span>
-                    <span>Slack</span>
-                </div>
-            </div>
-        </div>
-
-
-         <!-- PROJECT 4 (Image Right) -->
-        <div class="modern-project-card reverse-project scroll-project">
-            <div class="project-sticky-image">
-                <img src="projects/02/1.1.jpg" class="project-main-img">
-                <img src="projects/02/1.2.jpg" class="project-main-img second-img">
-            </div>
-            <div class="modern-project-content">
-                <div class="project-number">
-                    Featured Project 4
-                </div>
-                <h3>
-                    AI Content Creation Pipeline
-                </h3>
-                <p>
-                    An intelligent, multi-brand content production system that automates the entire content lifecycle — from research and ideation to drafting, repurposing and scheduling across blogs, social media and newsletters. The pipeline supports 6+ niche brands with unique voice customization, generates platform-specific content (LinkedIn, X, Instagram, Email) and maintains a human approval workflow — reducing content production time by 70% while ensuring consistent daily publishing.
-                <div class="project-tools">
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>Google Docs</span>
-                    <span>OpenAI</span>
-                    <span>LinkedIn API</span>
-                    <span>WordPress</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- PROJECT 5 (Image left) -->
-        <div class="modern-project-card scroll-project">
-            <div class="project-sticky-image">
-                <img src="projects/01/1.1.jpg" class="project-main-img">
-                <img src="projects/01/1.2.jpg" class="project-main-img second-img">
-            </div>
-            <div class="modern-project-content">
-                <div class="project-number">
-                    Featured Project 5
-                </div>
-                <h3>
-                    Multi-Platform Social Media Auto Posting System
-                </h3>
-                <p>
-                    A fully automated social media publishing system for a personal branding agency that manages content for 10+ founders, coaches and business influencers. The system centralizes content from Google Sheets/Airtable, auto-formats posts for each platform (LinkedIn, X, Facebook, Instagram, Threads), handles approval workflows and publishes automatically — reducing manual posting effort by 90% while ensuring consistent scheduling and near-zero missed posts.
-                </p>
-                <div class="project-tools">
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>OpenAI API</span>
-                    <span>Google Sheets</span>
-                    <span>Meta API</span>
-                    <span>Google Drive</span>
-                    <span>Slack Sheets</span>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- PROJECT 6 (Image Right) -->
-        <div class="modern-project-card reverse-project scroll-project">
-            <div class="project-sticky-image">
-                <img src="projects/02/1.1.jpg" class="project-main-img">
-                <img src="projects/02/1.2.jpg" class="project-main-img second-img">
-            </div>
-            <div class="modern-project-content">
-                <div class="project-number">
-                    Featured Project 6
-                </div>
-                <h3>
-                    AI-Powered Email Marketing Automation Funnel
-                </h3>
-                <p>
-                    A comprehensive automated email marketing system for a DTC skincare and wellness brand that captures leads from multiple sources (Facebook Ads, website forms, quizzes, abandoned carts), segments audiences by behavior and delivers personalized AI-generated email sequences — including welcome series, abandoned cart recovery, upsell campaigns and win-back sequences. The funnel increased email-driven revenue by 20%+, recovered 15%+ abandoned carts and reduced manual marketing effort by 70%.
-                </p>
-                <div class="project-tools">
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>Shopify</span>
-                    <span>OpenAI</span>
-                    <span>Google Sheets</span>
-                    <span>Webhooks</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- PROJECT 7 (Image left) -->
-        <div class="modern-project-card scroll-project">
-            <div class="project-sticky-image">
-                <img src="projects/01/1.1.jpg" class="project-main-img">
-                <img src="projects/01/1.2.jpg" class="project-main-img second-img">
-            </div>
-            <div class="modern-project-content">
-                <div class="project-number">
-                    Featured Project 7
-                </div>
-                <h3>
-                    AI-Powered Invoice & Accounting Automation
-                </h3>
-                <p>
-                    An end-to-end automated bookkeeping solution for a multi-client accounting agency serving 40+ SMBs across retail, logistics, healthcare and professional services. The system uses AI and OCR to extract data from invoices (email, cloud storage, uploads),categorizes expenses, detects duplicates and anomalies, syncs with QuickBooks/Xero and generates monthly reconciliation reports — reducing manual bookkeeping work by 70%+ while maintaining 90%+ extraction accuracy and audit-ready records.
-                </p>
-                <div class="project-tools">
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>OpenAI API</span>
-                    <span>Google Vision API</span>
-                    <span>Gmail</span>
-                    <span>Google Drive</span>
-                    <span>Google Sheets</span>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- PROJECT 8 (Image Right) -->
-        <div class="modern-project-card reverse-project scroll-project">
-            <div class="project-sticky-image">
-                <img src="projects/02/1.1.jpg" class="project-main-img">
-                <img src="projects/02/1.2.jpg" class="project-main-img second-img">
-            </div>
-            <div class="modern-project-content">
-                <div class="project-number">
-                    Featured Project 8
-                </div>
-                <h3>
-                    AI Lead Capture + CRM Automation for Real Estate
-                </h3>
-                <p>
-                    An intelligent lead management system for a real estate agency processing 80–150+ daily inquiries from Facebook Ads, websites, WhatsApp and listing portals. The system automatically captures, qualifies and scores leads using AI, routes them to the right sales agents and triggers instant personalized follow-up via email and WhatsApp — ensuring 90% of leads enter CRM automatically with first response sent within 2 minutes, boosting lead-to-sale conversion significantly.
-                </p>
-                <div class="project-tools">
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>Meta/Facebook Lead Ads</span>
-                    <span>OpenAI API</span>
-                    <span>Gmail</span>
-                    <span>Gmail</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- PROJECT 9 (Image left) -->
-        <div class="modern-project-card scroll-project">
-            <div class="project-sticky-image">
-                <img src="projects/01/1.1.jpg" class="project-main-img">
-                <img src="projects/01/1.2.jpg" class="project-main-img second-img">
-            </div>
-            <div class="modern-project-content">
-                <div class="project-number">
-                    Featured Project 9
-                </div>
-                <h3>
-                    AI Telegram / WhatsApp Alert Bot
-                </h3>
-                <p>
-                    A real-time business operations monitoring system for multiple online businesses (eCommerce, SaaS, paid ads) that consolidates critical alerts from sales, payments, inventory, website uptime, AD performance and support tickets into Telegram and WhatsApp. The bot uses AI to classify alert severity (Critical/High/Medium/Low), generates smart summaries, routes notifications to the right team (Finance, Sales, Support, Operations) and provides command-based queries like /today sales and /failed orders — ensuring critical incidents are reported within 1 minute and reducing manual monitoring effort significantly.
-                </p>
-                <div class="project-tools">
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>OpenAI API</span>
-                    <span>Telegram Bot API</span>
-                    <span>Slack</span>
-                    <span>Shopify</span>
-                    <span>Google Sheets</span>
-                </div>
-            </div>
-        </div>
-
-         <!-- PROJECT 10 (Image Right) -->
-        <div class="modern-project-card reverse-project scroll-project">
-            <div class="project-sticky-image">
-                <img src="projects/02/1.1.jpg" class="project-main-img">
-                <img src="projects/02/1.2.jpg" class="project-main-img second-img">
-            </div>
-            <div class="modern-project-content">
-                <div class="project-number">
-                    Featured Project 10
-                </div>
-                <h3>
-                    AI Meeting & Productivity Assistant
-                </h3>
-                <p>
-                    An intelligent automation system for a remote consulting company with 35+ employees that automatically processes Zoom, Google Meet and Teams meetings to generate AI-powered summaries, extract key decisions, risks and blockers and convert them into actionable tasks assigned to specific owners with deadlines and priorities. The system sends follow-up summaries via Slack/Email, tracks overdue tasks and maintains a searchable knowledge base — reducing manual note-taking by 70%+ while improving accountability and post-meeting execution speed.
-
-                </p>
-                <div class="project-tools">
-                    <span>n8n</span>
-                    <span>zapier</span>
-                    <span>Google Meet</span>
-                    <span>Slack</span>
-                    <span>Email</span>
-                    <span>Whisper API</span>
-                </div>
-            </div>
-        </div>
-
-
-
-
     </div>
-
 </section>
-<!-- ========================= -->
-<!-- CONTACT SECTION -->
-<!-- ========================= -->
 
+<!-- CONTACT -->
 <section class="contact-section" id="contact">
-
+    <div class="contact-glow"></div>
     <div class="contact-container">
-
-        <!-- LEFT CONTENT -->
-
-        <div class="contact-left">
-
-            <div class="section-tag">
-                CONTACT
-            </div>
-
-            <h2>
-                Let's Build Smart Automations Together
-            </h2>
-
-            <p>
-                Need AI-powered workflow automation for your business? <br>
-                Let’s discuss how I can help you save time,
-                reduce manual work and scale efficiently.
-            </p>
-
+        <div class="contact-left reveal">
+            <div class="section-tag">CONTACT</div>
+            <h2>Let's Build Smart <em>Automations</em> Together</h2>
+            <p>Need AI-powered workflow automation for your business?<br>Let's discuss how I can help you save time, reduce manual work and scale efficiently.</p>
         </div>
-
-
-
-        <!-- RIGHT CONTACT CARDS -->
-
         <div class="contact-right">
-
-            <!-- EMAIL CARD -->
-
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=md.sajidmahadibhuiya@gmail.com"
-target="_blank"
-               class="contact-card">
-
-                <div class="contact-icon">
-                    ✉️
-                </div>
-
-                <div class="contact-info">
-
-                    <h3>Email Me</h3>
-
-                    <span>
-                        md.sajidmahadibhuiya@gmail.com
-                    </span>
-
-                </div>
-
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=md.sajidmahadibhuiya@gmail.com" target="_blank" class="contact-card reveal" data-cursor="hover">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-info"><h3>Email Me</h3><span>md.sajidmahadibhuiya@gmail.com</span></div>
+                <div class="contact-arrow">↗</div>
             </a>
-
-
-
-            <!-- LINKEDIN CARD -->
-
-            <a href="https://www.linkedin.com/in/sajidmahadibhuiyan/"
-               target="_blank"
-               class="contact-card">
-
-                <div class="contact-icon">
-                    💼
-                </div>
-
-                <div class="contact-info">
-
-                    <h3>LinkedIn</h3>
-
-                    <span>
-                        Connect me
-                    </span>
-
-                </div>
-
+            <a href="https://wa.me/8801944021284" target="_blank" class="contact-card reveal" data-cursor="hover">
+                <div class="contact-icon">💬</div>
+                <div class="contact-info"><h3>WhatsApp</h3><span>+880 1944 021284 — Message me</span></div>
+                <div class="contact-arrow">↗</div>
             </a>
-
         </div>
-
     </div>
-
 </section>
 
-</section>
-
-<!-- ========================= -->
-<!-- FOOTER SECTION -->
-<!-- ========================= -->
-
+<!-- FOOTER -->
 <footer class="footer-section">
-
     <div class="footer-container">
-
-        <!-- COLUMN 1 -->
-
         <div class="footer-column">
-
-            <h1 class="footer-logo">
-             MD Sajid Mahadi Bhuiyan<span>.</span>
-            </h1>
-
-            <p class="footer-description">
-
-                AI Automation Developer specialized in building scalable AI workflows, CRM automations and intelligent business systems using n8n & Zapier.
-
-            </p>
-
+            <h1 class="footer-logo">MD Sajid Mahadi Bhuiyan<span>.</span></h1>
+            <p class="footer-description">AI Automation Developer specialized in building scalable AI workflows, CRM automations and intelligent business systems using n8n & Zapier.</p>
         </div>
-
-        <!-- COLUMN 2 -->
-
         <div class="footer-column">
-
             <h4>Quick Links</h4>
-
             <ul>
-
                 <li><a href="#home">Home</a></li>
-
                 <li><a href="#about">About Me</a></li>
-
                 <li><a href="#services">Services</a></li>
-
                 <li><a href="#projects">Projects</a></li>
-
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
-
         </div>
-
-        <!-- COLUMN 3 -->
-
         <div class="footer-column">
-
             <h4>Services</h4>
-
             <ul>
-                
                 <li>Custome Automation</li>
                 <li>AI Workflow Automation</li>
-
                 <li>CRM Automation</li>
-
                 <li>Email Automation</li>
-
                 <li>Lead Management</li>
-
                 <li>Telegram Bot Automation</li>
-
                 <li>API Integrations</li>
-
             </ul>
-
         </div>
-
-        <!-- COLUMN 4 -->
-
         <div class="footer-column">
-
             <h4>Contact</h4>
-
             <ul>
-
-                <li>
-
-                    <a 
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=md.sajidmahadibhuiya@gmail.com"
-                    target="_blank">
-
-                        Email Me
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a 
-                    href="https://www.linkedin.com/in/sajidmahadibhuiyan?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                    target="_blank">
-
-                        LinkedIn
-
-                    </a>
-
-                </li>
-
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=md.sajidmahadibhuiya@gmail.com" target="_blank">Email Me</a></li>
+                <li><a href="https://wa.me/8801944021284" target="_blank">WhatsApp</a></li>
             </ul>
-
         </div>
-
     </div>
-
-    <!-- FOOTER BOTTOM -->
-
     <div class="footer-bottom">
-
-        <p>
-            © 2026 Sajid Mahadi Bhuiyan. All Rights Reserved.
-        </p>
-
+        <p>© 2026 Sajid Mahadi Bhuiyan. All Rights Reserved.</p>
+        <p class="footer-credit">Crafted with precision & automation ⚡</p>
     </div>
-
 </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
-</html>>
+</html>
