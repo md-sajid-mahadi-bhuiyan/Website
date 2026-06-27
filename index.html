@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -324,5 +324,80 @@
 </footer>
 
 <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MD Sajid Mahadi Bhuiyan | AI Automation Specialist</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html,
+    body{
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    iframe{
+      width:100%;
+      height:100%;
+      border:none;
+      display:block;
+    }
+
+    .loading{
+      position:fixed;
+      inset:0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:white;
+      font-family:Arial;
+      z-index:9999;
+    }
+
+    .hidden{
+      display:none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="loading" id="loading">
+Loading...
+</div>
+
+<iframe
+id="site"
+src="https://mdsajidmahadibhuiyan.lovable.app/"
+allowfullscreen
+></iframe>
+
+<script>
+
+const iframe=document.getElementById("site");
+
+iframe.onload=()=>{
+
+document.getElementById("loading").classList.add("hidden");
+
+};
+
+</script>
+
 </body>
 </html>
